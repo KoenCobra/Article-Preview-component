@@ -7,30 +7,35 @@ $LightGrayishBlue: hsl(210, 46%, 95%);
 
 $font: 'Manrope', sans-serif;
 
-*{
+
+body{
  margin: 0;
  padding: 0;
  box-sizing: border-box;
-}
-
-
-body{
- min-width: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
+ height: 100vh;
  font-size: 13px;
  font-family: $font;
  background-color: $LightGrayishBlue;
-
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .card{
- width: 100%;
- margin: 0 auto;
  border-radius: 12px;
- 
+ max-width: 100%;
+ margin: 0 1rem;
+ border-radius: 10px;
+ background-color: white;
+
  .card-img{
-  width: 100%;
+
+  img{
+   width: 100%;
+   display: block;
+  }
+ }
+
+ .card-paragraph{
  }
 }

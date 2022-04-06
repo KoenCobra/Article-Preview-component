@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  min-width: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
   font-size: 13px;
   font-family: "Manrope", sans-serif;
   background-color: hsl(210deg, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  width: 100%;
-  margin: 0 auto;
   border-radius: 12px;
+  max-width: 100%;
+  margin: 0 1rem;
+  border-radius: 10px;
+  background-color: white;
 }
-.card .card-img {
+.card .card-img img {
   width: 100%;
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
