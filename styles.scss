@@ -27,6 +27,7 @@ body{
  margin: 0 1rem;
  border-radius: 10px;
  background-color: white;
+ position: relative;
 
  .card-img{
 
@@ -39,10 +40,10 @@ body{
  }
 
  .card-body{
-  padding: 2.5rem 2.5rem 0.3rem;
+  padding: 2.5rem 2.3rem 1.5rem;
   
   .card-header h6{
-   font-size: 1.3rem;
+   font-size: 1.1rem;
    margin: 0;
    color: $VeryDarkGrayishBlue;
   }
@@ -101,6 +102,51 @@ color: $DesaturatedDarkBlue;
 
  }
   .social-icons{
-   visibility: hidden;
+  //  visibility: hidden;
+  background-color: $VeryDarkGrayishBlue;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 2.5rem;
+
+  span{
+    text-transform: uppercase;
+    color: $DesaturatedDarkBlue;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+  }
+
+  img{
+          height: 1.5rem !important;
+          width: 1.5rem !important;
+          margin: 0;
+          margin-left: 1rem;
+
+  }
+.share-div{
+  background-color: $DesaturatedDarkBlue;
+  border-radius: 200px;
+  padding: 0.8rem;
+  margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg path {
+      fill: white;
+
+    }
+  .share{
+              height: 1.5rem !important;
+              width: 1.5rem !important;
+              margin: 0;
+  }
+}
   }
 }
