@@ -102,7 +102,6 @@ color: $DesaturatedDarkBlue;
 
  }
   .social-icons{
-  //  visibility: hidden;
   background-color: $VeryDarkGrayishBlue;
   height: 5rem;
   position: absolute;
@@ -114,6 +113,9 @@ color: $DesaturatedDarkBlue;
   display: flex;
   align-items: center;
   padding: 0 2.5rem;
+  transform-origin: bottom;
+  transition: all 0.3s ease-out;
+  transform: scale(0);
 
   span{
     text-transform: uppercase;
@@ -147,6 +149,10 @@ color: $DesaturatedDarkBlue;
               width: 1.5rem !important;
               margin: 0;
   }
+}
+
+&.active{
+  transform: scale(1);
 }
   }
 }
