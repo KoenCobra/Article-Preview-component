@@ -220,7 +220,7 @@ body {
       .social-icons {
         position: absolute;
         left: 60%;
-        top: -80px;
+        top: -40px;
         right: 0;
         display: flex;
         justify-content: space-evenly;
@@ -246,6 +246,7 @@ body {
 
         &.active {
           transform: scale(1);
+          top: -80px;
 
           svg path {
             fill: white;

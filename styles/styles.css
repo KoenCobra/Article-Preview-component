@@ -188,7 +188,7 @@ body {
   .card .card-footer .social-icons {
     position: absolute;
     left: 60%;
-    top: -80px;
+    top: -40px;
     right: 0;
     display: flex;
     justify-content: space-evenly;
@@ -213,6 +213,7 @@ body {
   }
   .card .card-footer .social-icons.active {
     transform: scale(1);
+    top: -80px;
   }
   .card .card-footer .social-icons.active svg path {
     fill: white;
