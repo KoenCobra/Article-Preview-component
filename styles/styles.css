@@ -125,4 +125,67 @@ body {
 }
 .card .social-icons.active {
   transform: scale(1);
+}
+
+@media (min-width: 1400px) {
+  .card {
+    display: grid;
+    grid-template-columns: 20rem 30rem;
+  }
+  .card .card-img {
+    background-image: url(../images/drawers.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-repeat: no-repeat;
+  }
+  .card .card-img img {
+    display: none;
+  }
+  .card .card-body .card-header h6 {
+    font-size: 1.4rem;
+  }
+  .card .card-body .card-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.2rem;
+  }
+  .card .card-footer {
+    position: relative;
+  }
+  .card .card-footer .social-link-btn {
+    padding: 0.7rem;
+  }
+  .card .card-footer .social-link-btn:hover {
+    cursor: pointer;
+  }
+  .card .card-footer .social-link-btn img {
+    height: 1rem !important;
+    width: 1rem !important;
+  }
+  .card .card-footer .social-icons {
+    position: absolute;
+    left: 60%;
+    top: -100px;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 15rem;
+    border-radius: 10px;
+    height: 3.5rem;
+    padding: 0.2rem 1.5rem;
+  }
+  .card .card-footer .social-icons.active {
+    transform: scale(1);
+  }
+  .card .card-footer .social-icons img {
+    margin: 0;
+  }
+  .card .card-footer .social-icons img:hover {
+    cursor: pointer;
+  }
+  .card .card-footer .social-icons .share-div {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
