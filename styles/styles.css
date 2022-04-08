@@ -19,6 +19,7 @@ body {
   border-radius: 10px;
   background-color: white;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card .card-img img {
   width: 100%;
@@ -127,6 +128,19 @@ body {
   transform: scale(1);
 }
 
+.attribution {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  margin-bottom: 0.1rem;
+  font-size: 0.8rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(214deg, 17%, 51%);
+}
+
 @media (min-width: 1400px) {
   .card {
     display: grid;
@@ -156,9 +170,16 @@ body {
   }
   .card .card-footer .social-link-btn {
     padding: 0.7rem;
+    transition: all 0.4s ease;
   }
   .card .card-footer .social-link-btn:hover {
     cursor: pointer;
+  }
+  .card .card-footer .social-link-btn.active {
+    background-color: hsl(214deg, 17%, 51%);
+  }
+  .card .card-footer .social-link-btn.active svg path {
+    fill: white;
   }
   .card .card-footer .social-link-btn img {
     height: 1rem !important;
@@ -167,7 +188,7 @@ body {
   .card .card-footer .social-icons {
     position: absolute;
     left: 60%;
-    top: -100px;
+    top: -80px;
     right: 0;
     display: flex;
     justify-content: space-evenly;
@@ -176,16 +197,46 @@ body {
     height: 3.5rem;
     padding: 0.2rem 1.5rem;
   }
+  .card .card-footer .social-icons::after {
+    position: absolute;
+    content: "";
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: hsl(217deg, 19%, 35%);
+    z-index: 3;
+    transform: rotate(45deg);
+  }
   .card .card-footer .social-icons.active {
     transform: scale(1);
   }
-  .card .card-footer .social-icons img {
+  .card .card-footer .social-icons.active svg path {
+    fill: white;
+  }
+  .card .card-footer .social-icons.active img {
     margin: 0;
   }
-  .card .card-footer .social-icons img:hover {
+  .card .card-footer .social-icons.active img:hover {
     cursor: pointer;
   }
-  .card .card-footer .social-icons .share-div {
+  .card .card-footer .social-icons.active .share-div {
     display: none;
+  }
+
+  .attribution {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+  }
+  .attribution a {
+    text-decoration: none;
+    color: hsl(214deg, 17%, 51%);
   }
 }/*# sourceMappingURL=styles.css.map */

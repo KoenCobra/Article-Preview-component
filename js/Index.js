@@ -4,6 +4,7 @@ const shareDiv = document.querySelector(".share-div");
 
 shareBtn.addEventListener("click", function () {
   socialDiv.classList.toggle("active");
+  shareBtn.classList.toggle("active");
 });
 
 shareDiv.addEventListener("click", function () {
